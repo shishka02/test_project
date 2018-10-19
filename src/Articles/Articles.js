@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import Users from '../User/index.js';
 import {connect} from 'react-redux';
 import { Provider } from 'react-redux';
-import { withRouter } from 'react-router-dom'
+import { withRouter,BrowserRouter } from 'react-router-dom'
 import { Switch, Route } from 'react-router'
 
 class Articles extends Component {
@@ -65,7 +65,10 @@ class Articles extends Component {
 
 }
     return (
-      <div>{linksFromArticle}
+
+      <div>
+
+      {linksFromArticle}
 
     </div>
   );

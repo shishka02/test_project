@@ -15,10 +15,8 @@ class Users extends Component {
 user_info=()=>{
   let state_keys=Object.keys(this.state)
   let state_arr=Object.values(this.props.testStore.Articles[0])
-  
-
   let state=this.state
-let buff;
+  let buff;
 
   state_arr.forEach(function(item){
 

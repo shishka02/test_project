@@ -7,6 +7,7 @@ import { Router, Route, Switch,} from 'react-router';
 import { BrowserRouter,Link,  } from 'react-router-dom';
 import {createStore}from 'redux';
 import {Provider} from 'react-redux';
+import Child from './Articles/child.js';
 ////////////////////////////////////////////////////
 import reducer from './reducers';
 const store=createStore(reducer,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
@@ -15,7 +16,10 @@ const store=createStore(reducer,  window.__REDUX_DEVTOOLS_EXTENSION__ && window.
 ReactDOM.render((
   <Provider store={store}>
   <BrowserRouter >
-    <App />
+  <Switch>
+    <Route exact path="/" component={App} />
+    <Route  path="/b/:id" component={Child} />
+</Switch>
   </BrowserRouter>
   </Provider>), document.getElementById('root'));
 
