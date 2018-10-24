@@ -30,27 +30,34 @@
     transform: rotate(360deg);
   }
 }
+#root{
 
-body{
-      margin: 2%;
+  margin:0;
+  padding: 0;
 }
-
-.user_info{
-left: 60%;
-position: absolute;
-top: 4%;
-border: 1px balck solid;
-border: 1px solid black;
-padding: 10px;
+.trashCan{
+  margin:1%;
 }
-
-.box_for_text{
-  width: 58%;
-border: 1px solid black;
-margin-bottom: 2%;
-}
-
-.box_for_text h3{
+.target {
+  height:200px;
+  width:200px;
+  border:1px solid black;
   text-align: center;
-margin: 5px;
+  float:right;
+  margin-right: 2%;
+}
+.items{
+  width:200px;
+  padding: 0;
+  margin: 0;
+  display:inline-block;
+  float:left;
+}
+.Knight{
+  width:100px;
+  height:20px;
+  border:1px solid black;
+  margin:10px;
+  padding: 2px;
+  text-align: center;
 }
